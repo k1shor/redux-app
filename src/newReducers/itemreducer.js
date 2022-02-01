@@ -1,6 +1,7 @@
-const initialdata = [
+const initialdata = {
+    itemsdata:  [
     {
-        item_name:"Samsung Galaxy F22",
+        item_name:"Samsung Galaxy F22 dddddddddddddddddddddddddddddddddddddddddddddddd",
         item_price:"Rs.23900 ",
         item_image:"https://static-01.daraz.com.np/p/bc80ad949455ca17b66a81907db918ee.jpg"
     },
@@ -60,7 +61,7 @@ const initialdata = [
         item_image:"https://static-01.daraz.com.np/p/82e316972c41e285552ebe878bf50e12.jpg"
     }
 ]
-
+}
 const itemreducer = (state=initialdata) => {
     return state
 }

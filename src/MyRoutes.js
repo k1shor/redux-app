@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from 'react';
-import Mainpage from "./finalPages/Mainpage";
+import Cart from "./finalPages/Cart"
+import Items from "./finalPages/Items";
 
 const MyRoutes = () => {
   return <Router>
       <Routes>
-          <Route path='/' element={<Mainpage/>}/>
+          <Route path='/' element={<Items/>}/>
+          <Route path='/cart' element={<Cart/>}/>
       </Routes>
   </Router>;
 };

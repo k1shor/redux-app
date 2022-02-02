@@ -9,7 +9,14 @@ function newCartreducer(state = initialData,action){
             return {
                 cart_items:[...state.cart_items, action.payload]
             }
-            
+        case 'EMPTY_THE_CART':
+            return {
+                cart_items:[]
+            }
+        case 'REMOVE_FROM_CART':
+            return{
+                cart_items: state.cart_items.filter(item=>action.payload.item_name!==item.item_name)
+            }
     
         default:
             return state;
